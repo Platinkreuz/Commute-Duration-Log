@@ -1,7 +1,7 @@
 Dim intAddressCount, strPath
 
-intAddressCount = 3
-strPath = Replace(WScript.ScriptFullName, WScript.ScriptName, "") & "Commute Duration.xlsx"
+intAddressCount = 3		' Number of addresses to log
+strPath = Replace(WScript.ScriptFullName, WScript.ScriptName, "") & "Commute Duration.xlsx"		' Full path to log spreadsheet (assumed to be in the same directory as this script)
 
 InitializeWorkbook intAddressCount, strPath
 

@@ -1,7 +1,7 @@
 Dim strWorkbookPath, strModulePath
 
 strWorkbookPath = Replace(WScript.ScriptFullName, WScript.ScriptName, "") & "Commute Duration.xlsx"		' Full path to log workbook
-strModulePath = ""											' Path to folder containing downloaded modules
+strModulePath = Replace(WScript.ScriptFullName, WScript.ScriptName, "")		' Path to folder containing downloaded modules
 
 InitializeVBA strWorkbookPath, strModulePath
 
